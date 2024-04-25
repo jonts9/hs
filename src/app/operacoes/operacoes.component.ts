@@ -11,7 +11,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styleUrl: './operacoes.component.css',
 })
 export class OperacoesComponent implements OnInit {
-  maxDigitos = 4;
+  maxDigitos = 2;
   t1 = 1;
   t2 = 1;
   operacao = "+";
