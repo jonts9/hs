@@ -1,1 +1,24 @@
-<p>letras works!</p>
+<div class="mb-4">
+    <div>
+        <span class="letra">{{letra}}</span>
+        <button class="btn btn-secondary" (click)="playAudio()"><i class="fa-solid fa-volume-high"></i></button>
+    </div>
+    <div>
+        <div>
+            <button class="btn btn-primary" (click)="prox()">Próxima {{textoProxima}}</button>
+        </div>
+        <div>
+            <input type="checkbox" name="vogal" [checked]="vogal" (change)="vogal = !vogal; changeTipoLetra()" >
+            <label for="vogal">Vogais</label>
+        </div>
+        <div>
+            <input type="checkbox" name="consoante" [checked]="consoante" (change)="consoante = !consoante; changeTipoLetra()">
+            <label for="consoante">Consoantes</label>
+        </div>
+        <div>
+            <input type="checkbox" name="som" [checked]="som" (change)="som = !som; changeSom()">
+            <label for="som">Tocar nome da letra</label>
+        </div>
+        
+    </div>
+</div>
