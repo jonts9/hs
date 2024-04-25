@@ -2,6 +2,8 @@
 body {
     background-image: url('./assets/images/flowers-5209386_1280.jpg');
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,75 @@
+/* centered columns styles */
+input {
+    font-size: 10em;
+    width: 4em;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.rtl {
+    unicode-bidi: bidi-override;
+    direction: RTL;
+}
+
+.no-border {
+    border: 0;
+    outline: 0;
+}
+
+.no-border:focus {
+    outline: none !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.transparente {
+    background: transparent;
+}
+
+.texto-maior {
+    font-size: 10em;
+}
+
+[contenteditable="true"].single-line {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+[contenteditable="true"].single-line br {
+    display: none;
+
+}
+
+[contenteditable="true"].single-line * {
+    display: inline;
+    white-space: nowrap;
+}
+
+:host {
+    display: flex;
+}
+
+.example-pizza-party {
+    color: hotpink;
+}
+
+mat-form-field {
+    margin-right: 12px;
+}
+
+.errado {
+    color: red;
+}

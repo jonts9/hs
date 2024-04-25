@@ -1,0 +1,36 @@
+<div class="container">
+    <br />
+    <h1 class="text-danger text-center">Operações</h1>
+    <div class="row">
+        <div class="col-sm">
+            <input style="height: 0.8em" class="no-border transparente texto-maior" disabled value="{{t1}}" dir="rtl" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <input style="height: 0.5em" class="no-border transparente texto-maior" disabled value="{{operacao}}" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <input style="height: 0.8em" class="no-border transparente texto-maior" disabled value="{{t2}}" dir="rtl" />
+        </div>
+        <p style="text-decoration: overline; font-size: 10em; height: 0.1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <input id="resposta" ngClass="{{errado}}" class="rtl no-border texto-maior" maxlength="6" type="number" autocomplete="off"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            (input)="input()" />
+        </div>
+    </div>
+    
+    
+    
+    <div class="row">
+        <button class="btn btn-danger" type="button" (click)="verificaResposta()">Submit</button>    
+    </div>
+
+    <div>
+    </div>
+</div>
